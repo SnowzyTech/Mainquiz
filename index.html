@@ -14,9 +14,9 @@
         <p class="text-blue-500">Body</p>
       </h6>
     </nav>
-    <div class="p-6">
-      <div class="flex gap-5 flex-col">
-        <p class="w-60 font-bold text-3xl leading-10">
+    <div class="p-6 lg:px-20">
+      <div class="flex gap-5 flex-col ">
+        <p class="w-1/2 font-bold md:text-[40px] lg:text-[60px]  text-3xl leading-relaxed lg:leading-none ">
           "Easiest way to follow online wieght loss plan"
         </p>
 
@@ -27,13 +27,13 @@
 
       </div>
     </div>
-      <div class="bg-white px-6 py-6 flex flex-col item-center justify-center">
+      <div class="bg-white px-6 py-6 flex flex-col w-full items-center justify-center border">
         <h1 class="font-bold">Welcome to the Quiz Funnel</h1>
-        <div class="flex gap-5  item-center justify-center">
-            <button id="maleBtn" class="border font-bold px-10 py-2 rounded-full text-blue-600 w-full male">Male</button>
-            <button id="femaleBtn" class="border font-bold px-10 py-2 rounded-full text-green-600 w-full female">Female</button>
+        <div id="questionsContainer" class="flex justify-center"></div>
+        <div class="flex gap-5  w-1/2">
+            <button id="maleBtn" class="border font-bold px-10 py-2 rounded-full text-blue-600 w-full  male">Male</button>
+            <button id="femaleBtn" class="border font-bold px-10 py-2 rounded-full text-green-600 w-full  female">Female</button>
         </div>
-        <div id="questionsContainer"></div>
       </div>
 
     <script src="app.js"></script>
