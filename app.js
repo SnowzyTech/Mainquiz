@@ -161,9 +161,9 @@
                 const questionElement = document.createElement('div');
                 questionElement.classList.add('question');
                 questionElement.innerHTML = `
-                    <h2>Q${currentQuestionIndex + 1}: ${currentQuestion.question}</h2>
-                    <ul>
-                        ${currentQuestion.options.map(option => `<li>${option}</li>`).join('')}
+                    <h2 class='question-heading'>Q${currentQuestionIndex + 1}: ${currentQuestion.question}</h2>
+                    <ul class='options'>
+                        ${currentQuestion.options.map(option => `<li class='option'>${option}</li>`).join('')}
                     </ul>
                 `;
                 questionsContainer.innerHTML = ''; // Clear previous question
@@ -195,9 +195,9 @@
             const firstQuestionElement = document.createElement('div');
             firstQuestionElement.classList.add('question');
             firstQuestionElement.innerHTML = `
-                <h2>Q1: ${firstQuestion.question}</h2>
-                <ul>
-                    ${firstQuestion.options.map((option, index) => `<li data-index="${index}">${option}</li>`).join('')}
+                <h2 class='question-heading'>Q1: ${firstQuestion.question}</h2>
+                <ul class='options'>
+                    ${firstQuestion.options.map((option, index) => `<li class='option' data-index="${index}">${option}</li>`).join('')}
                 </ul>
             `;
             questionsContainer.innerHTML = ''; // Clear previous question
@@ -227,9 +227,9 @@
                 const questionElement = document.createElement('div');
                 questionElement.classList.add('question');
                 questionElement.innerHTML = `
-                    <h2>Q${currentQuestionIndex + 1}: ${currentQuestion.question}</h2>
-                    <ul>
-                        ${currentQuestion.options.map(option => `<li>${option}</li>`).join('')}
+                    <h2 class='question-heading'>Q${currentQuestionIndex + 1}: ${currentQuestion.question}</h2>
+                    <ul class='options'>
+                        ${currentQuestion.options.map(option => `<li class='option'>${option}</li>`).join('')}
                     </ul>
                 `;
                 questionsContainer.innerHTML = ''; // Clear previous question

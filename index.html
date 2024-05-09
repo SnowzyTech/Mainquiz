@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to the Quiz Funnel</h1>
-        <button id="maleBtn">Male</button>
-        <button id="femaleBtn">Female</button>
-        <div id="questionsContainer"></div>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="nav px-2 py-4 border-b">
+      <h6 class="flex gap-1 font-bold">
+        Perfect
+        <p class="text-blue-500">Body</p>
+      </h6>
+    </nav>
+    <div class="p-6">
+      <div class="flex gap-5 flex-col">
+        <p class="w-60 font-bold text-3xl leading-10">
+          "Easiest way to follow online wieght loss plan"
+        </p>
+
+        <div class="">
+          <img src="./blue-stars-new.webp" alt="stars" width="150" />
+          <p class=""><span class=""> 1k+</span>happy community members</p>
+        </div>
+
+      </div>
     </div>
+      <div class="bg-white px-6 py-6 flex flex-col item-center justify-center">
+        <h1 class="font-bold">Welcome to the Quiz Funnel</h1>
+        <div class="flex gap-5  item-center justify-center">
+            <button id="maleBtn" class="border font-bold px-10 py-2 rounded-full text-blue-600 w-full male">Male</button>
+            <button id="femaleBtn" class="border font-bold px-10 py-2 rounded-full text-green-600 w-full female">Female</button>
+        </div>
+        <div id="questionsContainer"></div>
+      </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
