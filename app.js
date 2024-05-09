@@ -243,8 +243,14 @@
                         if (currentQuestionIndex < subQuestions.length) {
                             displayQuestion(); // Display next question
                         } else {
-                            // Redirect to another page for Female section completion
-                            window.location.href = 'female_completed.html'; // Change this to the URL you want to redirect to
+
+                            // Redirect based on the option selected
+
+                            if(optionIndex === 0) {
+                                window.location.href = 'female_completed_option1.html'; // Redirect for option 1
+                            }else {
+                                window.location.href = 'female_completed_option2-3.html'; // Redirect for options 2 and 3
+                            }
                         }
                     });
                 });
