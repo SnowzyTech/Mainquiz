@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,10 +27,9 @@
 
       </div>
     </div>
-      <div class="bg-white px-6 py-6 flex flex-col w-full items-center justify-center border">
-        <h1 class="font-bold">Welcome to the Quiz Funnel</h1>
+      <div class="bg-white px-6 py-6 flex flex-col w-full items-center justify-between border">
         <div id="questionsContainer" class="flex justify-center"></div>
-        <div class="flex gap-5  w-1/2">
+        <div class="flex gap-[40px]  w-1/2">
             <button id="maleBtn" class="border font-bold md:px-10 px-5 md:py-2 py-1 rounded-full text-blue-600 w-full  male">Male</button>
             <button id="femaleBtn" class="border font-bold md:px-10 px-5 md:py-2 py-1 rounded-full text-green-600 w-full  female">Female</button>
         </div>
@@ -38,4 +37,49 @@
 
     <script src="app.js"></script>
   </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<nav class="nav px-2 py-4 border-b">
+  <h6 class="flex gap-1 font-bold">
+      Perfect
+      <p class="text-blue-500">Body</p>
+  </h6>
+</nav>
+<div class="p-6 lg:px-20">
+  <div class="flex gap-5 flex-col ">
+      <p class="md:w-1/2 w-2/3 font-bold md:text-[40px] lg:text-[60px]  text-3xl leading-relaxed lg:leading-none ">
+          "Easiest way to follow online weight loss plan"
+      </p>
+      <div class="">
+          <img src="./blue-stars-new.webp" alt="stars" width="150" />
+          <p class=""><span class=""> 1k+</span>happy community members</p>
+      </div>
+  </div>
+</div>
+<div class="bg-white px-6 py-10 flex flex-col w-full items-center justify-between border bottom-0 fixed">
+  <div class="flex gap-[40px]  w-1/2">
+      <button id="maleBtn" class="border font-bold md:px-10 px-5 md:py-2 py-1 rounded-full text-blue-600 w-full  male">Male</button>
+      <button id="femaleBtn" class="border font-bold md:px-10 px-5 md:py-2 py-1 rounded-full text-green-600 w-full  female">Female</button>
+  </div>
+</div>
+
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-content" id="popupContent">
+      <div id="questionsContainer" class="flex justify-center"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
 </html>
+
